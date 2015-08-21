@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">T9Apps</string>
+    <string name="title_activity_main">T9Apps</string>
+    <string name="delete_button_descrition">点击清除输入</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

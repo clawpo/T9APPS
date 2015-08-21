@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/dialpad_background"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/digits"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:nextFocusRight="@+id/deleteButton"
+            android:scrollHorizontally="true"
+            android:textAppearance="@style/DigitsTextAppearance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        style="@style/keyboard"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/keyboard" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/keyboard"
+        android:layout_below="@id/input_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="8dip"
+         />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_weight="5"
+        android:gravity="left|center"
+        android:paddingLeft="2dp"
+        android:singleLine="true"
+        android:text="sweetie"
+        android:textColor="#ffffff"
+        android:textSize="20dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+
+    <CheckBox
+        android:id="@+id/toggle"
+        android:layout_width="48dip"
+        android:background="@drawable/checkbox_background"
+        android:button="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" android:layout_gravity="center_vertical" android:layout_height="match_parent" android:layout_marginTop="6dip" android:layout_marginBottom="6dip"/>
+
+</LinearLayout>
